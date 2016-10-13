@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Friends</string>
+    <string name="add_event">Add Event</string>
+    <string name="create_meet">Create Meet Up</string>
+    <string name="tell_us_about_event">Tell us something about the event</string>
+    <string name="category_prompt">Select Category</string>
+    <string name="age_prompt">Select Age</string>
+    <string name="backdrop_title">Person Name</string>
+    <string name="backdrop_subtitle">Place, Location</string>
+    <string name="attending_peoples">Peoples are attending</string>
+    <string name="nearby">Nearby</string>
+    <string name="friends">Friends</string>
+    <string name="discover">Discover</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+
+
+    <string-array name="category_array">
+        <item>Select Category</item>
+        <item>Friend</item>
+        <item>Close Friend</item>
+        <item>People</item>
+        <item>Friend of Friend</item>
+        <item>Relative</item>
+    </string-array>
+    <string name="title_activity_nearby">Map</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="send_request">Send Request</string>
+    <string name="verdana">verdana</string>
+    <string name="message">Message</string>
+    <string name="search_friends">Search friends</string>
+    <string name="write_comment">Write comment...</string>
+    <string name="comments">Comments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comment_here">Comment here...</string>
+
+
+</resources>

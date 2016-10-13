@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/discover_second_card_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="0dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/event_pic_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/event_pic"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="290dp" />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.alluresoft.friends.CircleImageView
+                android:id="@+id/profile_pic_discover_second"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignBottom="@+id/event_pic"
+            android:background="#992BB9E6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:id="@+id/name_place_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_name_on_discover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/place_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/backdrop_subtitle"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/time_and_date"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time and date"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_weight="50">
+                <Button
+                    android:id="@+id/comment_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/share_it_circle_btn"
+                    android:drawableLeft="@drawable/ic_comment_white_24dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:id="@+id/favorite_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/share_it_circle_btn"
+                    android:drawableLeft="@drawable/ic_favorite_border_white_24dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:id="@+id/share_it_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/share_it_circle_btn"
+                    android:drawableLeft="@drawable/ic_share_white_24dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

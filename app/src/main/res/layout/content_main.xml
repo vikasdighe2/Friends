@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.alluresoft.friends.OtherUserProfileActivity"
+    tools:showIn="@layout/activity_other_user_profile">
+
+    <LinearLayout
+        android:id="@+id/tabbar_count"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:elevation="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33.3">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60">
+
+                <TextView
+                    android:id="@+id/event_count_other_profile"
+                    android:text="40"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+                <TextView
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Events"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/lighter_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:elevation="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33.4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60">
+
+                <TextView
+                    android:id="@+id/attended_count_other_profile"
+                    android:text="40"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+                <TextView
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Attended"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/lighter_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:elevation="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33.3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60">
+
+                <TextView
+                    android:id="@+id/event_followers_other_profile"
+                    android:text="40"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+                <TextView
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Followers"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/lighter_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="50">
+            <Button
+                android:id="@+id/send_friend_request_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:elevation="2dp"
+                android:background="@drawable/send_request_message_btn"
+                android:fontFamily="@string/verdana"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:text="@string/send_request"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="50">
+            <Button
+                android:id="@+id/send_message_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:elevation="2dp"
+                android:background="@drawable/send_request_message_btn"
+                android:fontFamily="@string/verdana"
+                android:textColor="@color/white"
+                android:text="@string/message"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/lighter_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.2">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/bottom_tab_bar" />
+
+    </LinearLayout>-->
+</LinearLayout>

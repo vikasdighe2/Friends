@@ -1,0 +1,252 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alluresoft.friends.fragments.DiscoverFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/map_layout"
+        android:layout_below="@+id/toolbar_discover_tinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/sky_blue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <include layout="@layout/fragment_toolbar"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/in_scroll_linear_layout"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/event_pic_details"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/black_gray"
+                        android:layout_height="450dp">
+
+                        <android.support.v4.view.ViewPager
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/viewPagerIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="110dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/viewPagerCountDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:orientation="horizontal" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/viewpager"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/name_place_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="40"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/event_name_on_meetup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Event Name"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/place_location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/backdrop_subtitle"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/time_and_date"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="time and date"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:layout_gravity="center"
+                                android:layout_weight="60">
+                                <Button
+                                    android:id="@+id/comment_button"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/share_it_circle_btn"
+                                    android:drawableLeft="@drawable/ic_comment_white_24dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_marginRight="10dp"/>
+                                <Button
+                                    android:id="@+id/favorite_button"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/share_it_circle_btn"
+                                    android:drawableLeft="@drawable/ic_favorite_border_white_24dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_marginRight="10dp"/>
+                                <Button
+                                    android:id="@+id/share_it_button"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/share_it_circle_btn"
+                                    android:drawableLeft="@drawable/ic_share_white_24dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_marginRight="10dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/attend_friend_icon_layout"
+                        android:elevation="5dp"
+                        android:background="#F3F3F3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/event_pic_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6.5">
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+                                    <com.alluresoft.friends.CircleImageView
+                                        android:id="@+id/friend1"
+                                        android:src="@drawable/blank_avatar_circle"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+                                    <com.alluresoft.friends.CircleImageView
+                                        android:id="@+id/friend2"
+                                        android:src="@drawable/blank_avatar_circle"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+                                    <com.alluresoft.friends.CircleImageView
+                                        android:src="@drawable/blank_avatar_circle"
+                                        android:id="@+id/friend3"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+                                    <com.alluresoft.friends.CircleImageView
+                                        android:id="@+id/friend4"
+                                        android:src="@drawable/blank_avatar_circle"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+                                    <Button
+                                        android:id="@+id/friend5"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/share_it_circle_btn"
+                                        android:text="+412"
+                                        android:textSize="10sp"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.5">
+                                <Button
+                                    android:id="@+id/attend_btn_discover"
+                                    android:layout_width="90dp"
+                                    android:layout_height="30dp"
+                                    android:text="Attend"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:background="@drawable/attend_button"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!-- icon toolbar in last bottom -->
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
